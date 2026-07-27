@@ -1,0 +1,885 @@
+/* ============================
+        GOOGLE FONT
+============================ */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#ffffff;
+    color:#333;
+    line-height:1.6;
+}
+
+/* ============================
+        NAVBAR
+============================ */
+
+header{
+
+    position:fixed;
+
+    width:100%;
+
+    top:0;
+
+    left:0;
+
+    z-index:999;
+
+    background:#c1121f;
+
+    box-shadow:0 2px 10px rgba(0,0,0,.15);
+
+}
+
+.navbar{
+
+    width:90%;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 0;
+
+}
+
+.logo h2{
+
+    color:white;
+
+    font-size:28px;
+
+}
+
+.logo span{
+
+    color:lch(94.45% 0.01 296.81);
+
+}
+
+.nav-menu{
+
+    display:flex;
+
+    list-style:none;
+
+}
+
+.nav-menu li{
+
+    margin-left:35px;
+
+}
+
+.nav-menu a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:16px;
+
+    transition:.3s;
+
+}
+
+.nav-menu a:hover{
+
+    color:#ffd166;
+
+}
+
+.btn-nav{
+
+    text-decoration:none;
+
+    background:white;
+
+    color:#c1121f;
+
+    padding:12px 22px;
+
+    border-radius:30px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.btn-nav:hover{
+
+    background:#ffd166;
+
+}
+
+/* ============================
+          HERO
+============================ */
+
+.hero{
+
+    width:90%;
+
+    margin:auto;
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:60px;
+
+}
+
+.hero-left{
+
+    flex:1;
+
+}
+
+.hero-left h1{
+
+    font-size:55px;
+
+    margin-bottom:25px;
+
+    color:#222;
+
+}
+
+.hero-left span{
+
+    color:#c1121f;
+
+}
+
+.hero-left p{
+
+    font-size:18px;
+
+    margin-bottom:35px;
+
+    color:#555;
+
+}
+
+.hero-button{
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+.btn-red{
+
+    text-decoration:none;
+
+    background:#c1121f;
+
+    color:white;
+
+    padding:15px 35px;
+
+    border-radius:40px;
+
+    transition:.3s;
+
+}
+
+.btn-red:hover{
+
+    background:#8f0d16;
+
+}
+
+.btn-white{
+
+    text-decoration:none;
+
+    color:#c1121f;
+
+    border:2px solid #c1121f;
+
+    padding:15px 35px;
+
+    border-radius:40px;
+
+    transition:.3s;
+
+}
+
+.btn-white:hover{
+
+    background:#c1121f;
+
+    color:white;
+
+}
+
+.hero-right{
+
+    flex:1;
+
+}
+
+.hero-right img{
+
+    width:100%;
+
+}
+
+/* ============================
+          TITLE
+============================ */
+
+.title{
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+.title h2{
+
+    font-size:40px;
+
+    color:#c1121f;
+
+}
+
+.title p{
+
+    color:#666;
+
+}
+
+/* ============================
+          ABOUT
+============================ */
+
+.about{
+
+    width:90%;
+
+    margin:auto;
+
+    padding:100px 0;
+
+}
+
+.about-container{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:60px;
+
+}
+
+.about-image{
+
+    flex:1;
+
+}
+
+.about-image img{
+
+    width:100%;
+
+    border-radius:15px;
+
+}
+
+.about-text{
+
+    flex:1;
+
+}
+
+.about-text h3{
+
+    font-size:35px;
+
+    margin-bottom:20px;
+
+}
+
+.about-text p{
+
+    margin-bottom:18px;
+
+    color:#666;
+
+}
+
+.about-info{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-top:40px;
+
+}
+
+.about-info div{
+
+    text-align:center;
+
+}
+
+.about-info h4{
+
+    font-size:35px;
+
+    color:#c1121f;
+
+}
+
+.about-info span{
+
+    color:#666;
+
+}
+
+/* ============================
+        SERVICES
+============================ */
+
+.services{
+
+    background:#f8f8f8;
+
+    padding:100px 5%;
+
+}
+
+.service-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+}
+
+.service-card{
+
+    background:white;
+
+    padding:40px 30px;
+
+    text-align:center;
+
+    border-radius:15px;
+
+    transition:.4s;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+}
+
+.service-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.18);
+
+}
+
+.service-card i{
+
+    font-size:55px;
+
+    color:#c1121f;
+
+    margin-bottom:25px;
+
+}
+
+.service-card h3{
+
+    margin-bottom:15px;
+
+    font-size:24px;
+
+}
+
+.service-card p{
+
+    color:#666;
+
+}
+
+
+/* ============================
+        ACTIVITIES
+============================ */
+
+.activities{
+
+    padding:100px 5%;
+
+}
+
+.activity-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:35px;
+
+}
+
+.activity-card{
+
+    background:white;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:0 5px 18px rgba(0,0,0,.12);
+
+    transition:.4s;
+
+}
+
+.activity-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.activity-card img{
+
+    width:100%;
+
+    height:240px;
+
+    object-fit:cover;
+
+}
+
+.activity-text{
+
+    padding:25px;
+
+}
+
+.activity-text h3{
+
+    margin-bottom:15px;
+
+    color:#c1121f;
+
+}
+
+.activity-text p{
+
+    color:#666;
+
+}
+
+
+/* ============================
+        CONTACT
+============================ */
+
+.contact{
+
+    background:#f8f8f8;
+
+    padding:100px 5%;
+
+}
+
+.contact-container{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:50px;
+
+}
+
+.contact-info h3{
+
+    font-size:35px;
+
+    margin-bottom:25px;
+
+    color:#c1121f;
+
+}
+
+.contact-info p{
+
+    margin-bottom:20px;
+
+    color:#555;
+
+}
+
+.contact-info i{
+
+    color:#c1121f;
+
+    margin-right:10px;
+
+}
+
+.contact-form{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.contact-form input,
+
+.contact-form textarea{
+
+    padding:16px;
+
+    margin-bottom:20px;
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+
+    outline:none;
+
+    font-size:16px;
+
+}
+
+.contact-form input:focus,
+
+.contact-form textarea:focus{
+
+    border:1px solid #c1121f;
+
+}
+
+.contact-form button{
+
+    padding:16px;
+
+    border:none;
+
+    background:#c1121f;
+
+    color:white;
+
+    font-size:17px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.contact-form button:hover{
+
+    background:#8d0f18;
+
+}
+
+
+/* ============================
+        FOOTER
+============================ */
+
+footer{
+
+    background:#c1121f;
+
+    color:white;
+
+    text-align:center;
+
+    padding:50px 20px;
+
+}
+
+.footer-content h2{
+
+    font-size:35px;
+
+    margin-bottom:15px;
+
+}
+
+.footer-content p{
+
+    margin:10px 0;
+
+}
+
+.footer-content hr{
+
+    margin:25px auto;
+
+    width:60%;
+
+    border:1px solid rgba(255,255,255,.2);
+
+}
+
+.social{
+
+    margin:30px 0;
+
+}
+
+.social a{
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:50%;
+
+    background:white;
+
+    color:#c1121f;
+
+    margin:0 8px;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.social a:hover{
+
+    background:#ffd166;
+
+}
+
+
+/* ============================
+        RESPONSIVE
+============================ */
+
+@media(max-width:992px){
+
+.hero{
+
+    flex-direction:column;
+
+    text-align:center;
+
+    padding-top:120px;
+
+}
+
+.hero-button{
+
+    justify-content:center;
+
+}
+
+.about-container{
+
+    flex-direction:column;
+
+}
+
+.contact-container{
+
+    grid-template-columns:1fr;
+
+}
+
+.navbar{
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.nav-menu{
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.hero-left h1{
+
+    font-size:38px;
+
+}
+
+.title h2{
+
+    font-size:32px;
+
+}
+
+.about-info{
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.btn-nav{
+
+    display:none;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.nav-menu{
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+.nav-menu li{
+
+    margin:10px 0;
+
+}
+
+.hero{
+
+    min-height:auto;
+
+    padding:150px 0 80px;
+
+}
+
+.hero-left p{
+
+    font-size:16px;
+
+}
+
+}
+/* ============================
+        ANIMATION
+============================ */
+
+.service-card,
+.activity-card,
+.about-container,
+.contact-container{
+
+    opacity:0;
+
+    transform:translateY(60px);
+
+    transition:1s;
+
+}
+
+.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+
+/* ============================
+        BACK TO TOP
+============================ */
+
+#topBtn{
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:25px;
+
+    width:50px;
+
+    height:50px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#c1121f;
+
+    color:white;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    display:none;
+
+    transition:.3s;
+
+    z-index:9999;
+
+}
+
+#topBtn:hover{
+
+    background:#8d0f18;
+
+}
+
+
+/* ============================
+        ACTIVE MENU
+============================ */
+
+.nav-menu a.active{
+
+    color:#ffd166;
+
+    font-weight:600;
+
+}
